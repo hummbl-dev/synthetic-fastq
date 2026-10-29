@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synthetic-fastq"
+version = "0.1.0"
+description = "Deterministic synthetic FASTQ/BAM fixture generator for NGS pipelines"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+synthetic-fastq = "synthetic_fastq.cli:main"
+
+[tool.setuptools]
+packages = ["synthetic_fastq"]
